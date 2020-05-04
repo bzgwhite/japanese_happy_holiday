@@ -196,6 +196,10 @@ elif [ "${month}" -eq 09 -a "${weekday}" -eq 1 -a "${day}" -gt 14 -a "${day}" -l
   echo "${tar_date_name}は敬老の日です。"
   exit 1
 
+# 国民の休日
+elif [ "${month}" -eq 09 -a "${day}" -eq 22 -a "${weekday}" -eq 2 -a "${autumn}" -eq 23 ]; then
+  echo "${tar_date_name}は国民の祝日です。"
+
 # 秋分の日
 elif [ "${month}" -eq 09 -a "${day}" -eq "${autumn}" ]; then
   echo "${tar_date_name}は秋分の日です。"
